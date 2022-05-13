@@ -1,0 +1,11 @@
+{
+  "Author": "JudgeZarbi",
+  "Name": "Roll Giveaway Plugin",
+  "Punchline": "A plugin to aid roll giveaways.",
+  "Description": "A plugin to aid roll giveaways. /rgiveaway for menu.",
+  "InternalName": "rollGiveawayPlugin",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "plugin"
+  ]
+}
