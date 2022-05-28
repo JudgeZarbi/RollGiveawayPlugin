@@ -182,7 +182,10 @@ namespace RollGiveawayPlugin
 
         private void EndRound()
 		{
+
+
             configuration.currentGame.entries.Sort();
+
 
             switch ((configuration.mode))
 			{
@@ -244,6 +247,7 @@ namespace RollGiveawayPlugin
                     configuration.count--;
                     break;
                 case Game.Mode.LowestWins:
+                    RemoveUnrolledPlayers();
                     targetRoll = configuration.currentGame.entries[configuration.currentGame.entries.Count - 1].roll;
                     for (int i = configuration.currentGame.entries.Count - 2; i >= 0; i--)
                     {
@@ -259,6 +263,7 @@ namespace RollGiveawayPlugin
                     {
                         toKeep--;
                     }
+                    RemoveUnrolledPlayers();
                     targetRoll = configuration.currentGame.entries[configuration.currentGame.entries.Count - (int)toKeep].roll;
                     for (int i = configuration.currentGame.entries.Count - (int)toKeep; i >= 0; i--)
                     {
@@ -269,6 +274,7 @@ namespace RollGiveawayPlugin
                     }
                     break;
                 case Game.Mode.LowestCount:
+                    RemoveUnrolledPlayers();
                     targetRoll = configuration.currentGame.entries[configuration.currentGame.entries.Count - configuration.count].roll;
                     for (int i = configuration.currentGame.entries.Count - configuration.count; i >= 0; i--)
                     {
@@ -297,6 +303,17 @@ namespace RollGiveawayPlugin
                 }
             }
 
+        }
+
+        private void RemoveUnrolledPlayers()
+		{
+            for (int i = configuration.currentGame.entries.Count - 1; i >= 0; i--)
+            {
+                if (configuration.currentGame.entries[i].roll == -1)
+                {
+                    configuration.currentGame.entries.RemoveAt(i);
+                }
+            }
         }
 
         private string ListRemainingPlayers()
