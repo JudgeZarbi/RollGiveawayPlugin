@@ -4,7 +4,7 @@
     "Name": "Roll Giveaway",
     "Description": "Make doing games using /random easier.",
     "InternalName": "RollGiveawayPlugin",
-    "AssemblyVersion": "0.1.0.0",
+    "AssemblyVersion": "0.1.1.0",
     "RepoUrl": "https://github.com/JudgeZarbi/RollGiveawayPlugin",
     "ApplicableVersion": "any",
     "Tags": [
@@ -21,8 +21,8 @@
     "IsTestingExclusive": "False",
     "LastUpdated": 1652398800,
     "DownloadCount": 0,
-    "DownloadLinkInstall": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/JudgeZarbi/RollGiveawayPlugin/releases/download/0.1.1/latest.zip"
   },
 ]
